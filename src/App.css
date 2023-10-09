@@ -1,4 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;800&display=swap');
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+:root{
+  --main-bg: #000;
+  --btn-color: blue;
+}
+nav{
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://cdn.pixabay.com/photo/2019/06/01/22/41/river-4245261_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav-container-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 12% 30px;
+}
+.nav-container-1 .hero-img button{
+  padding: .6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+}
+.nav-container-1 .hero-img .btn-primary a{
+  color: #fff;
+  font-weight: 600;
+}
+.nav-container-1 .hero-img .upload-btn a{
+  color: #000;
+  font-weight: 600;
+}
+.nav-container-1 .hero-img .btn-primary{
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.nav-container-2 input{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1rem;
+  width: 800px;
+  border-radius: 40px;
+  border: none;
+
+}
+/* .nav-logo img{
+  width: 90px;
+  height: 90px;
+} */
+.nav-logo h1{
+  color: #fff;
+}
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-img img{
+  width: 30px;
+  height: 30px;
 }
