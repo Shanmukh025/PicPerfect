@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
         <nav>
             <div className="search-bar">
-            
+            /*hello*/
             </div>
             <div className="nav-logo">
 
