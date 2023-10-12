@@ -16,7 +16,6 @@ const Navbar = () => {
               <button className='btn-primary'><a href="#">Login</a></button>
               <button class="btn upload-btn">
     <label for="imageInput" class="upload-label">Upload</label>
-    <input type="file" id="imageInput" class="upload-input" accept="image/*"/>
   </button></div>
             </div>
 
