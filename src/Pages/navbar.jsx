@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from '../images/logo.jpg'
+import React from 'react';
+import logo from "../images/logo.png";
+
 const Navbar = () => {
   return (
     <>
@@ -7,23 +8,22 @@ const Navbar = () => {
 
             <div className="nav-container-1">
             <div className="nav-logo">
-              {/* <img src={logo} alt="" /> */}
-              <h1>Pic<span>Perfect</span></h1>
+              {<img src={logo} alt="" width="150" height="150"/> }
             </div>
             
             <div className="hero-img">
-              
-              <button className='btn-primary'><a href="#">join</a></button>
+              <button className='btn-primary'><a href="#">Join</a></button>
               <button className='btn-primary'><a href="#">Login</a></button>
-              <button className='upload-btn'><a href="#">Upload</a></button>
-
-            </div>
+              <button class="btn upload-btn">
+    <label for="imageInput" class="upload-label">Upload</label>
+    <input type="file" id="imageInput" class="upload-input" accept="image/*"/>
+  </button></div>
             </div>
 
             <div className="nav-container-2">
               
               <div className="search-bar">
-                <input type="search" placeholder='search PicPerfect' required/>
+                <input type="search" placeholder='Search PicPerfect' required/>
               </div>
             </div>
 
