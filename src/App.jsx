@@ -7,6 +7,8 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <login />
+      <signup />
     </>
   )
 }

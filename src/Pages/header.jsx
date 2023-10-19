@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-      Hello World!
+      PHOTOS UPLOADED BY USERS APPEAR HERE.
     </>
   )
 }
