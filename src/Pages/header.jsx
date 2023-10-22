@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       PHOTOS UPLOADED BY USERS APPEAR HERE.
-      A
+      SHAN1
     </>
   )
 }
