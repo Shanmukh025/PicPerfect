@@ -5,10 +5,10 @@ import Navbar from './Pages/navbar'
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <login />
-      <signup />
+      <Navbar/>
+      <Header/>
+      <login/>
+      <signup/>
     </>
   )
 }
