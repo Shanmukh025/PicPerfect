@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;800&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
+
 :root{
   --main-bg: white;
   --btn-color: blue;
 }
+
 nav{
   width: 100%;
   height: 60vh;
@@ -17,28 +20,34 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .nav-container-1{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 12% 30px;
 }
+
 .nav-container-1 .hero-img button{
   padding: .6rem 1.2rem;
   border: none;
   border-radius: 20px;
 }
+
 .nav-container-1 .hero-img .btn-primary a{
   color: white;
   font-weight: 600;
 }
+
 .nav-container-1 .hero-img .upload-btn {
   border: 3px solid orangered;
   font-weight: 600;
 }
+
 .upload-btn{
   color: orangered;
 }
+
 .nav-container-1 .hero-img .btn-primary{
   background-color: transparent;
   border: 2px solid white;
@@ -54,19 +63,23 @@ nav{
   border-radius: 40px;
   border: none;
 }
+
 .nav-logo h1{
   color: #fff;
 }
+
 .hero-img{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
+
 .hero-img img{
   width: 30px;
   height: 30px;
 }
+
 .container {
   display: flex;
   justify-content: center;
