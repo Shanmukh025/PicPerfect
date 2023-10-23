@@ -12,9 +12,9 @@ function Navbar() {
           </div>
 
           <div className="hero-img">
-            <button className="btn-primary">Join</button>
-            <button className="btn-primary">Login</button>
-            <button to="/upload" className="btn upload-btn">Upload</button>
+            <button className="btn-primary"><h4>JOIN</h4></button>
+            <button className="btn-primary"><h4>LOGIN</h4></button>
+            <button className="btn upload-btn"><h3>UPLOAD</h3></button>
           </div>
         </div>
 

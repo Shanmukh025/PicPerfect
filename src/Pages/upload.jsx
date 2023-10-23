@@ -1,39 +1,57 @@
-// Upload.jsx
 import React from 'react';
+import './upload.css';
 
 const Upload = () => {
   return (
-    <><form action method="post">
-  
-    <h1><strong>File upload</strong> for PicPerfect</h1>
-    
-    <div class="form-group">
-      <label for="title">Title <span>Give a title for your picture.</span></label>
-      <input type="text" name="title" id="title" class="form-controll"/>
-    </div>
-    <div class="form-group">
-      <label for="caption">Caption <span>A descriptive caption works fine.</span></label>
-      <input type="text" name="caption" id="caption" class="form-controll"/>
-    </div>
-    
-    <div class="form-group file-area">
-          <label for="images">Images <span>Your images should be at least 400x300 wide.</span></label>
-      <input type="file" name="images" id="images" required="required" multiple="multiple"/>
-      <div class="file-dummy">
-        <div class="success">Great, your files are selected. Keep on.</div>
-        <div class="default">Please select some files</div>
-      </div>
-    </div>
-    
-    <div class="form-group">
-      <button type="submit">Upload images</button>
-    </div>
-    
-  </form>
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'></link>
+    <>
+      <form action="" method="post">
+        <h1>
+          <strong>PicPerfect</strong> Image Uploader.
+        </h1>
+
+        <div className="form-group">
+          <label htmlFor="title">
+            Give a Title <span>Give a title for your picture.</span>
+          </label>
+          <input type="text" name="title" id="title" className="form-control" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="caption">
+            Give a Caption <span>A descriptive caption works fine.</span>
+          </label>
+          <input type="text" name="caption" id="caption" className="form-control" />
+        </div>
+
+        <div className="form-group file-area">
+          <label htmlFor="images">
+            Select Image <span>Should be atleast 300x300 wide.</span>
+          </label>
+          <input
+            type="file"
+            name="images"
+            id="images"
+            required
+            multiple
+            className="form-control"
+          />
+          <div className="file-dummy">
+            <div className="success">Great, your photo is uploaded.</div>
+            <div className="default">Select a photo</div>
+          </div>
+        </div>
+
+        <div className="form-group">
+          <button type="submit">Upload Image!</button>
+        </div>
+      </form>
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700"
+        rel="stylesheet"
+        type="text/css"
+      />
     </>
   );
-}
+};
 
 export default Upload;
