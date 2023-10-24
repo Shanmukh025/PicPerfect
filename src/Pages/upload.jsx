@@ -17,7 +17,7 @@ const Upload = () => {
         </div>
         <div className="form-group">
           <label htmlFor="caption">
-            Give a Caption <span>A cool caption works fine.</span>
+            Give a Caption <span>A  caption works fine.</span>
           </label>
           <input type="text" name="caption" id="caption" className="form-control" />
         </div>
