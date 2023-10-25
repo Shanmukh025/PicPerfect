@@ -48,7 +48,7 @@ nav{
 }
 .nav-container-1 .hero-img .upload-btn:hover{
   background-color: orangered;
-  color: #fff;
+  color: #000000;
 }
 
 .nav-container-1 .hero-img .btn-primary{
@@ -101,7 +101,7 @@ nav{
 
 .input:focus {
   border: 2px solid orangered;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .nav-container-1 button{

@@ -17,7 +17,7 @@ const Content = () => {
   return (
     <>
       <div className="content-container">
-        <h1>Our Gallery</h1>
+        <h1>Gallery</h1>
         {/* <div className="content-image">
           {
             images.map((element, index)=>{
