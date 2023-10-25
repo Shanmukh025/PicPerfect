@@ -21,8 +21,8 @@ function Navbar() {
                             <h3>Login</h3>
                         </button>
                         <button className="btn upload-btn" onClick={()=> {navigate(`/upload`)}}>
-                                <h3>UPLOAD</h3>
-                            </button>
+                            <h3>UPLOAD</h3>
+                        </button>
                     </div>
                 </div>
 

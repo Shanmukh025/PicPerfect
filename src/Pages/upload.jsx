@@ -4,7 +4,8 @@ import './upload.css';
 const Upload = () => {
   return (
     <>
-      <form action="" method="post">
+    <div className="upload-body">
+    <form action="" method="post">
         <h1>
           <strong>PicPerfect</strong> Image Uploader.
         </h1>
@@ -50,6 +51,7 @@ const Upload = () => {
         rel="stylesheet"
         type="text/css"
       />
+    </div>
     </>
   );
 };

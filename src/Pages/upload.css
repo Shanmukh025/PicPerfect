@@ -44,11 +44,11 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-html, body {
+.upload-body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-weight: 300;
-    height: 100%;
     background: #fC6A03;
     color: black;
     font-size: 16px;
@@ -90,7 +90,7 @@ label span {
     outline: 2px solid rgba(255, 255, 255, 0.5);
     outline: -webkit-focus-ring-color auto 5px;
 }
-button {
+.form-group button {
     padding: 12px 25px;
     background: rgba(0, 0, 0, 0.8);
     color: #f46303;
