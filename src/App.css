@@ -97,11 +97,15 @@ nav{
 }
 .input:hover {
   border: 2px solid orangered;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
 }
 
 .input:focus {
   border: 2px solid orangered;
   background-color: #000000;
+  color: white;
 }
 
 .nav-container-1 button{
