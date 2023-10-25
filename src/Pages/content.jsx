@@ -9,17 +9,22 @@ const Content = () => {
     {'url':'https://cdn.pixabay.com/photo/2023/10/17/06/38/wind-chimes-8320493_640.jpg'},
     {'url':'https://cdn.pixabay.com/photo/2023/10/16/10/51/fox-8318961_640.png'},
     {'url':'https://cdn.pixabay.com/photo/2023/10/17/10/32/building-8320842_640.png'},
-    {'url':''},
-    {'url':''},
-    {'url':''},
-    {'url':''},
+    {'url':'https://cdn.pixabay.com/photo/2023/10/20/20/53/pears-8330221_640.jpg'},
+    {'url':'https://cdn.pixabay.com/photo/2023/09/09/08/31/woman-8242672_640.jpg'},
+    {'url':'https://cdn.pixabay.com/photo/2023/10/01/19/14/oranges-8287967_640.jpg'},
+    {'url':'https://cdn.pixabay.com/photo/2023/09/14/19/46/elephant-8253639_640.jpg'},
   ]
   return (
     <>
       <div className="content-container">
         <h1>Our Gallery</h1>
-        <div className="content-image">
-        </div>
+        {/* <div className="content-image">
+          {
+            images.map((element, index)=>{
+              return(<img key={index} src={element.url} alt="" />)
+            })
+          }
+        </div> */}
       </div>
     </>
   )
