@@ -55,7 +55,7 @@
     overflow: hidden;
     background: -moz-linear-gradient(top, #bd6405 0%, #ff7402 100%);
 }
-h1 {
+.upload-body form h1 {
     text-align: center;
     margin: 50px auto;
     font-weight: 100;

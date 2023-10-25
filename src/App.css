@@ -83,32 +83,18 @@ nav{
   width: 30px;
   height: 30px;
 }
-
+.nav-container-2 .container input{
+  outline: none;
+  font-size: 1rem;
+  width: 700px;
+  transition: all .2s ease;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 35px;
 }
-
-.input {
-  max-width: 400px;
-  height: 10px;
-  outline: none;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #fff;
-  caret-color: black;
-  color: black;
-  padding: 7px 10px;
-  border: 2px solid transparent;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  margin-right: 1px;
-  transition: all .2s ease;
-  border: 2px solid orangered;
-}
-
 .input:hover {
   border: 2px solid orangered;
 }
@@ -121,4 +107,11 @@ nav{
 .nav-container-1 button{
   cursor: pointer;
 }
-
+/*********************************************************************************************************************************************/
+.content-container h1{
+  text-align: center;
+  margin: 2rem;
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  text-underline-offset: .6rem;
+}
