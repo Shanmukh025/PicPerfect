@@ -15,7 +15,7 @@
 nav{
   width: 100%;
   height: 60vh;
-  background-image: url('https://images.unsplash.com/photo-1481414981591-5732874c7193?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D');
+  background-image: url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?cs=srgb&dl=pexels-francesco-ungaro-281260.jpg&fm=jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,8 +42,8 @@ nav{
 .nav-container-1 .hero-img .upload-btn {
   border: 3.5px solid orangered;
   font-weight: 600;
-  background-color: black;
-  color: orangered;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
   transition: all .10s ease-in-out;
 }
 .nav-container-1 .hero-img .upload-btn:hover{
