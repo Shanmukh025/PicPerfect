@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import logo from '../images/logo.png';
 
 function Navbar() {
+    const navigate = useNavigate();
     return (
         <>
             <nav>
@@ -19,11 +20,9 @@ function Navbar() {
                         <button className="btn-primary">
                             <h3>Login</h3>
                         </button>
-                        <Link to="upload">
-                            <button className="btn upload-btn">
+                        <button className="btn upload-btn" onClick={()=> {navigate(`/upload`)}}>
                                 <h3>UPLOAD</h3>
                             </button>
-                        </Link>
                     </div>
                 </div>
 
