@@ -53,8 +53,9 @@ nav{
 
 .nav-container-1 .hero-img .btn-primary{
   background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(40, 35, 35);
+  color: black;
+  border-radius: 10px;
 }
 
 .nav-container-2 input{
@@ -111,7 +112,7 @@ nav{
 .nav-container-1 button{
   cursor: pointer;
 }
-/*********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
 .content-container h1{
   text-align: center;
   margin: 2rem;
@@ -119,6 +120,7 @@ nav{
   text-decoration-color: orangered;
   text-underline-offset: .6rem;
 }
+
 /* .content-image{
   display: grid;
   grid-template-columns: auto auto auto auto;
