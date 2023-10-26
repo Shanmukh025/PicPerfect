@@ -47,7 +47,7 @@ nav{
   transition: all .10s ease-in-out;
 }
 .nav-container-1 .hero-img .upload-btn:hover{
-  background-color: orangered;
+  background-color: rgb(255, 123, 0);
   color: #000000;
 }
 
