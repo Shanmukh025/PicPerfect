@@ -1,4 +1,5 @@
 import React from 'react';
+import uploadlogo from '../images/uploadlogo.jpg';
 import './upload.css';
 
 const Upload = () => {
@@ -6,10 +7,10 @@ const Upload = () => {
     <>
     <div className="upload-body">
     <form action="" method="post">
+    <img src={uploadlogo} width="180" height="180" style={{ marginTop: "10px" , marginLeft: "660px" }} alt="Your Image"/>
         <h1>
-          <strong>PicPerfect</strong> Image Uploader.
+          <strong>PicPerfect </strong><span>Image Uploader.</span>
         </h1>
-
         <div className="form-group">
           <label htmlFor="title">
             Give a Title <span>Give a title for your picture.</span>
@@ -18,7 +19,7 @@ const Upload = () => {
         </div>
         <div className="form-group">
           <label htmlFor="caption">
-            Give a Caption <span>A  caption works fine.</span>
+            Give a Caption <span>A good caption works fine.</span>
           </label>
           <input type="text" name="caption" id="caption" className="form-control" />
         </div>
