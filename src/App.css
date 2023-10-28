@@ -53,7 +53,7 @@ nav{
 
 .nav-container-1 .hero-img .btn-primary{
   background-color: transparent;
-  border: 2px solid rgb(40, 35, 35);
+  border: 2px solid black;
   color: black;
   border-radius: 10px;
 }
