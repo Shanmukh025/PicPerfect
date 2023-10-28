@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Join = () => {
+  const navigate = useNavigate();
   return (
     <>
     <div className="join-container">
@@ -32,11 +34,9 @@ const Join = () => {
           <input type="text" placeholder="Confirm your password" required />
         </div>
       </div>
-        <Link to="/login" className="login-link">
-      <div className="join-input-box join-button">
+      <div className="join-input-box " onClick={() => { navigate(`/login`)}}>
           <input type="button" value="JOIN PICPERFECT" />
         </div>
-        </Link>
     </div>
     </>
   );

@@ -121,7 +121,7 @@ nav{
   text-underline-offset: .6rem;
 }
 
-/* .content-image{
+.content-image{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-flow: dense;
@@ -137,7 +137,7 @@ nav{
 .content-image img{
   width: 100%;
   object-fit: cover;
-} */
+}
 
 .login-container {
   background: #fff;
@@ -223,19 +223,7 @@ nav{
   font-size: 14px;
   text-align: center;
 }
-.login-container .login-facebook a,
-.login-container .login-twitter a {
-  display: block;
-  height: 45px;
-  width: 100%;
-  font-size: 15px;
-  text-decoration: none;
-  padding-left: 20px;
-  line-height: 45px;
-  color: #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
+
 .login-container .login-facebook i,
 .login-container .login-twitter i {
   padding-right: 12px;
@@ -339,12 +327,6 @@ nav{
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
-#dot-1:checked ~ .join-container .category label .one,
-#dot-2:checked ~ .join-container .category label .two,
-#dot-3:checked ~ .join-container .category label .three {
-  background: #9b59b6;
-  border-color: #d9d9d9;
-}
 .join-container input[type="radio"] {
   display: none;
 }
@@ -404,11 +386,14 @@ nav{
   outline: none;
   font-size: 16px;
   border: none;
+    cursor: pointer;
+
 }
 .join-container form .join-input-box input:focus ~ .join-underline::after,
 .join-container form .join-input-box input:valid ~ .join-underline::after {
   transform: scaleX(1);
   transform-origin: left;
+
 }
 .join-container .join-input-box input[type="submit"] {
   background: linear-gradient(to right, orangered 0%, orangered 100%);
