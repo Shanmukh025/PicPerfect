@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "PicPerfect Server & Backend",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,11 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "A.Shanmukh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "node": "^21.1.0"
   },
   "devDependencies": {

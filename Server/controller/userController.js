@@ -1,43 +1,44 @@
+const asynchandler = require("express-async-handler");
 //@desc Get all users
 //route GET /api/users
 //@access public
-const getUsers = async(req, res) => {
+const getUsers = asynchandler (async (req, res) => {
     res.status(200).json({message: "Get all users"});
-};
+});
 
 //@desc Create new users
 //route POST /api/users
 //@access public
-const createUser = async(req, res) => {
+const createUser = asynchandler (async (req, res) => {
     console.log("Request body is: ", req.body);
-    const {name, email, phone} = req.body;
-    if(!name || !email || !phone){
-        res.status(400);
-        throw new Error("All fields are mandatory");
+    const { name, email, phone } = req.body;
+    if (!name || !email || !phone) {
+        res.status(400).json({ error: "All fields are mandatory." });
+        return;
     }
-    res.status(201).json({message: "Create user"});
-};
+    res.status(201).json({ message: "Create user" });
+});
 
 //@desc Get user
 //route POST /api/users/:id
 //@access public
-const getUser = async(req, res) => {
+const getUser = asynchandler (async (req, res) => {
     res.status(200).json({message: `Get user for ${req.params.id}`});
-};
+});
 
 //@desc Update user
 //route PUT /api/users/:id
 //@access public
-const updateUser = async(req, res) => {
+const updateUser = asynchandler (async (req, res) => {
     res.status(200).json({message: `Update user for ${req.params.id}`});
-};
+});
 
 //@desc Delete user
 //route DELETE /api/users/:id
 //@access public
-const deleteUser = async(req, res) => {
+const deleteUser = asynchandler (async (req, res) => {
     res.status(200).json({message: `Delete user for ${req.params.id}`});
-};
+});
 
 module.exports = {
     getUsers,
