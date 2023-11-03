@@ -10,11 +10,13 @@ const getUsers = asynchandler (async (req, res) => {
 //route POST /api/users
 //@access public
 const createUser = asynchandler (async (req, res) => {
-    console.log("Request body is: ", req.body);
     const { name, email, phone } = req.body;
     if (!name || !email || !phone) {
         res.status(400).json({ error: "All fields are mandatory." });
         return;
+    }
+    else {
+        console.log("Request body is: ", req.body);
     }
     res.status(201).json({ message: "Create user" });
 });
