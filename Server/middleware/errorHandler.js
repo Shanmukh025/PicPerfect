@@ -37,9 +37,6 @@ const statusCode = res.statusCode ? res.statusCode : 500;
                 stackTrace: err.stack,
             });
             break;
-        default:
-            console.log("No error handler for this error.");
-            break;
     }
 };
 module.exports = errorHandler;
