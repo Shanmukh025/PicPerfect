@@ -11,7 +11,9 @@ const port = 3000;
 
 app.use(express.json());
 
-app.use("/users", require("./routes/userRoutes"));
+app.use("/contact", require("./routes/contactRoutes"));
+app.use("/user", require("./routes/userRoutes"));
+
 
 app.use(errorHandler);
 
