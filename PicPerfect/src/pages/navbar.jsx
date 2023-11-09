@@ -2,12 +2,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import logo from '../images/logo.png';
+import video from '../images/video.mp4'
 
 function Navbar() {
     const navigate = useNavigate();
     return (
         <>
-            <nav>
+            {/* <nav>
                 <div className="nav-container-1">
                     <div className="nav-logo">
                         <img src={logo} width="150" height="150" alt="Your Image" onClick={() => { navigate(`/`)}}/>
@@ -35,6 +36,23 @@ function Navbar() {
                 <div className="nav-container-2">
                     <div className="container">
                         <input type="text" name="text" className="input" placeholder="Search PicPerfect" />
+                    </div>
+                </div>
+            </nav> */}
+
+
+            <nav>
+                <div className="nav-container flex">
+                    <div className="container flex">
+                        <div className="video-container">
+                            {/* <video src={video} autoPlay muted loop></video> */}
+                        </div>
+                        <div className="search-container">
+                            <h3></h3>
+                            <span className="caption"></span>
+                            <input type="search"  placeholder='search'/>
+                            <FiSearch className="icon"/>
+                        </div>
                     </div>
                 </div>
             </nav>

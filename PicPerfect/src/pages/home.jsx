@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
     <Navbar/>
-    <Content/>
+    {/* <Content/> */}
     </>
   )
 }
