@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Montserrat:wght@300;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
   margin: 0;
@@ -15,6 +16,7 @@
   --third-bg: #4F4A45;
   --fourth-bg: #F6F1EE;
 
+  --caption-font: 'Edu TAS Beginner';
   --fw-8: 800;
   --fw-6: 600;
   --fw-5: 500;
@@ -35,24 +37,90 @@
   width: 0;
 }
 /****************************************************************/
-.flex{
-  display: flex;
-  align-items: center;
-}
-.grid{
-  display: grid;
-  place-items: center;
-  gap: 1rem;
-}
-img, video{
-  width: 100%;
-}
+
 /**************************************************************/
 nav{
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin: 0 auto;
   border-radius: 0 0 10px 10px;
+  background: linear-gradient();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      rgba(45, 92, 132, 0.5),
+      rgba(45, 92, 132, 0.5)
+    ),
+    url("https://cdn.pixabay.com/photo/2015/07/27/13/34/bokeh-862559_1280.jpg");
+}
+.nav-container-links{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15% 10px;
+}
+.nav-container-links .nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-logo h1{
+  font-size: 40px;
+  font-weight: var(--fw-8);
+  color: #fff;
+}
+.nav-links li a{
+  color: #ffff;
+  font-weight: 700;
+  padding: .6rem 1rem;
+  border-radius: 40px;
+  border: 2px solid var(--grey-color);
+}
+.search-container{
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search-container h3{
+  font-size: 50px;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+.search-container .caption{
+  color: #ffff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: var(--caption-font);
+
+  > .author{
+    font-size: 16px;
+    font-family: var(--caption-font);
+    font-weight: 400;
+    margin-top: .2rem;
+    margin-left: 26rem;
+    text-align: right;
+  }
+}
+.search-container .input{
+  margin-top: 1rem;
+  width: 700px;
+  background-color: #ccc;
+  padding: 1.3rem 2rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--third-bg);
+}
+.search-container .input::placeholder{
+  color: var(--third-bg);
+  font-weight: 700;
 }
 
 /********************************************************************************************************************************************/

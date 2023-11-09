@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
+
+import{FiSearch} from 'react-icons/fi'
 import logo from '../images/logo.png';
 import video from '../images/video.mp4'
 
@@ -42,19 +44,30 @@ function Navbar() {
 
 
             <nav>
-                <div className="nav-container flex">
+
                     <div className="container flex">
+                        <div className="nav-container-links">
+                        <div className="nav-logo">
+                            <h1>Logo</h1>
+                        </div>
+                        <ul className="nav-links">
+                            <li><a href="#" onClick={() => { navigate(`/upload`)}}>Upload</a></li>
+                            <li><a href="#" onClick={() => { navigate(`/login`)}}>Login</a></li>
+                        </ul>
+                        </div>
                         <div className="video-container">
                             {/* <video src={video} autoPlay muted loop></video> */}
                         </div>
                         <div className="search-container">
-                            <h3></h3>
-                            <span className="caption"></span>
-                            <input type="search"  placeholder='search'/>
-                            <FiSearch className="icon"/>
+                            <h3>Start journey with us..!</h3>
+                            <span className="caption">" A good picture keeps a moment from running away... "<br /><span className="author">- Shanmukh</span></span><br />
+                            <div className="input-container">
+                                <input type="search" className='input' placeholder='search'/>
+                                {/* <FiSearch className="icon"/> */}
+                            </div>
                         </div>
                     </div>
-                </div>
+
             </nav>
         </>
     );
