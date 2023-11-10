@@ -324,7 +324,8 @@ nav{
   margin: 14px 0;
   justify-content: space-between;
 }
-.join-container .category label {
+.join-container .category label
+{
   display: flex;
   align-items: center;
   cursor: pointer;
