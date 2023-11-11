@@ -8,7 +8,7 @@ const {
     deleteContact,
     createContact,
     loginContact,
-} = require("../controller/ContactController");
+} = require("../controller/contactController");
 
 router.route("/").get(getContacts);
 
