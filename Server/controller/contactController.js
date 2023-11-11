@@ -117,7 +117,6 @@ const loginContact = asynchandler(async (req, res) => {
     }
 });
 
-
 module.exports = {
     getContacts,
     createContact,
