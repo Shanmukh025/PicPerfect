@@ -2,24 +2,26 @@ const mongoose = require("mongoose");
 
 const contactSchema = mongoose.Schema({
 
-    fullname:{
+    fname:{
         type:String,
-        required:[true, "Name is required"]
+        required:[true, "First Name is required"]
     },
 
-    username:{
+    lname:{
         type:String,
-        required:[true, "Name is required"]
+        required:[true, "Last Name is required"],
     },
 
     email:{
         type:String,
-        required:[true, "Email is required"]
+        required:[true, "Email is required"],
+        unique: true
     },
 
     phone:{
         type:Number,
-        required:[true, "Phone is required"]
+        required:[true, "Phone is required"],
+        unique: true
     },
 
     password:{
