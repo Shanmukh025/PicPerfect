@@ -2,9 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
-import{FiSearch} from 'react-icons/fi'
-import logo from '../images/logo.png';
-import video from '../images/video.mp4'
 
 function Navbar() {
     const navigate = useNavigate();
