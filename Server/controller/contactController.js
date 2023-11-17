@@ -88,6 +88,7 @@ const deleteContact = asynchandler(async (req, res) => {
 const loginContact = asynchandler(async (req, res) => {
   const { email, password } = req.body;
 
+<<<<<<< HEAD
   if (!email || !password) {
     res.status(400).json({ error: "All fields are mandatory!" });
     return;
@@ -113,6 +114,36 @@ const loginContact = asynchandler(async (req, res) => {
     } else {
       res.status(401).json({ error: "Invalid Credentials" });
     }
+    if (!email || !password) {
+        res.status(400).json({ error: "All fields are mandatory!" });
+        return;
+    }
+
+    try {
+        const contact = await Contact.findOne({ email });
+
+        if (contact && (await bcrypt.compare(password, contact.password))) {
+            const accessToken = jwt.sign(
+                {
+                    contact: {
+                        id: contact._id,
+                        fname: contact.fname,
+                        email: contact.email,
+                    },
+                },
+                process.env.ACCESS_TOKEN_SECRET,
+                { expiresIn: "1h" }
+            );
+
+            res.status(200).json({ accessToken });
+        } else {
+            res.status(401).json({ error: "Invalid Credentials" });
+        }
+    } catch (error) {
+        console.error("Error during login:", error);
+        res.status(500).json({ error: "Failed to authenticate" });
+>>>>>>> cdaf684b795ffad9bc11e5678c3fe1e0b955ec46
+    }
   } catch (error) {
     console.error("Error during login:", error);
     res.status(500).json({ error: "Failed to authenticate" });
@@ -127,3 +158,4 @@ module.exports = {
   deleteContact,
   loginContact,
 };
+
