@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Join from './Pages/Join';
 import Login from './Pages/Login';
 import Upload from './Pages/Upload';
+import Profile from './pages/profile';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/upload' element={<Upload />} />
         <Route path='/login' element={<Login />} />
         <Route path='/join' element={<Join />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </Router>
   );
