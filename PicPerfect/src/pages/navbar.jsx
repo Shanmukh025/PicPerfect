@@ -45,9 +45,6 @@ function Navbar() {
                             <li><a href="#" onClick={() => { navigate(`/login`)}}>Login</a></li>
                         </ul>
                         </div>
-                        <div className="video-container">
-                            {/* <video src={video} autoPlay muted loop></video> */}
-                        </div>
                         <div className="search-container">
                             <h3>Start journey with us..!</h3>
                             <span className="caption">" A good picture keeps a moment from running away... "<br /><span className="author">- Shanmukh</span></span><br />
