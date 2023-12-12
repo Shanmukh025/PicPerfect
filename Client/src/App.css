@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Montserrat:wght@300;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  color: #ccc;
+}
+:root{
+
+  --main-bg: #FF5B22;
+  --secondary-bg: #6C5F5B;
+  --third-bg: #4F4A45;
+  --fourth-bg: #F6F1EE;
+
+  --caption-font: 'Edu TAS Beginner';
+  --fw-8: 800;
+  --fw-6: 600;
+  --fw-5: 500;
+  --fw-4: 400;
+
+  --transistion-motion: all .2s ease;
+  
+  --percent-100: 100%;
+  --percent-50: 50%;
+
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-color: #ccc;
+
+  --heading-1: 2rem;
+  --heading-2: 1.6rem;
+  --heading-3: 1.3rem;
+
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+body{
+  background-color: #252525;
+  padding-inline: 20px;
+}
+a{
+  color: #ccc;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #ccc; */
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: .3rem;
+}
+.heading1{
+  font-size: var(--heading-1);
+  line-height: 32px;
+}
+.heading2{
+  font-size: var(--heading-2);
+  line-height: 28px;
+}
+.heading3{
+  font-size: var(--heading-3);
+  line-height: 20px;
+}
+/******************************************************************************************/
